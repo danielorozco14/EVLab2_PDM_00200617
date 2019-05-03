@@ -39,8 +39,6 @@ class Buttons : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_buttons, container, false)
 
-
-
         view.boton_1.setOnClickListener { atras()}
 
         view.boton_2.setOnClickListener { adelante()}

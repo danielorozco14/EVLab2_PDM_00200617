@@ -5,8 +5,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 
 import com.example.cortolabo.R
+import kotlinx.android.synthetic.main.fragment_colors.view.*
 
 
 private const val ARG_PARAM1 = "param1"
@@ -14,7 +16,7 @@ private const val ARG_PARAM2 = "param2"
 
 
 class Color : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var param1: String? = "color"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,20 +30,18 @@ class Color : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
 
         var view = inflater.inflate(R.layout.fragment_colors, container, false)
 
-        //ponerImagen(view)
+        ponerColor(view)
         return view
     }
 
-    /*fun ponerImagen(view: View){
+    fun ponerColor(view: View){
         if(isAdded){
-            Glide.with(this.context!!).load(param1).into(view.color)
+            view.color.setBackgroundColor(resources.getColor(R.color.colorRojo))
         }
-    }*/
-
+    }
 
     companion object {
 

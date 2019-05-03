@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() , Buttons.OnFragmentInteractionListener
     }
 
     override fun onFragmentInteraction() {
-        Log.d("boton", "click anterior")
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,9 +38,14 @@ class MainActivity : AppCompatActivity() , Buttons.OnFragmentInteractionListener
 
         init()
 
-        //colores.add("https://joesknowsfood.com/wp-content/uploads/2018/01/instagram-logo-vector-download-200x200.jpg")
-        //colores.add("https://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png")
-        //colores.add("https://doculinux.files.wordpress.com/2010/03/batux-tux-g2-hd-200x200.png")
+        //color rojo agregado
+
+        colores.add("#FF0000")
+        //color azul agregado
+        colores.add("#0000FF")
+        //color verde agregado
+        colores.add("#00FF00")
+
 
         var fragmento = Color.newInstance(colores.get(sumar(contador)))
         changeFragment(R.id.color_fragment,fragmento)
