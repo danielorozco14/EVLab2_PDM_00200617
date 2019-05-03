@@ -71,7 +71,9 @@ class MainActivity : AppCompatActivity() , Buttons.OnFragmentInteractionListener
         return b
     }
 
-    fun changeFragment(num: Int,frag: Fragment){ supportFragmentManager.beginTransaction().replace(num,frag).commit() }
+    fun changeFragment(num: Int,frag: Fragment){
+        supportFragmentManager.beginTransaction().replace(num,frag).commit()
+    }
 
     fun init(){
         var botones = Buttons.newInstance()
